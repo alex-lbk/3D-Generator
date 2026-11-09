@@ -1,0 +1,6 @@
+{
+  "name": "M4 Hop-Up Einstellrad CAD Generator",
+  "description": "Parametrische CAD-Webanwendung zur millimetergenauen Erstellung und zum STL/3MF-Export von 3D-druckbaren M4 Hop-Up Einstellrädern mit echter Spiralnut.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
