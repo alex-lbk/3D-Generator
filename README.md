@@ -12,19 +12,17 @@ Der Generator ist auf die Erstellung des Einstellrades spezialisiert und stellt 
 
 <h2>Funktionen</h2>
 <ul>
-  <li>
-Parametrische Konstruktion des Einstellrades
-Individuell einstellbare Innen- und Außendurchmesser
-Einstellbare Gesamthöhe
-Spiralförmige Einstellnut
-Einstellbare Spiralhöhe und Einstellgeometrie
-Konfigurierbare Anzahl der Spiralumdrehungen und Rotationswinkel
-Zweistufige Innenbohrung
-Konische Außenkontur
-Individuell einstellbare geometrische Details
-3D-Vorschau des generierten Modells
-Export als STL und gegebenenfalls 3MF
-  </li>
+<li>Parametrische Konstruktion des Einstellrades</li>
+<li>Individuell einstellbare Innen- und Außendurchmesser</li>
+<li>Einstellbare Gesamthöhe</li>
+<li>Spiralförmige Einstellnut</li>
+<li>Einstellbare Spiralhöhe und Einstellgeometrie</li>
+<li>Konfigurierbare Anzahl der Spiralumdrehungen und Rotationswinkel</li>
+<li>Zweistufige Innenbohrung</li>
+<li>Konische Außenkontur</li>
+<li>Individuell einstellbare geometrische Details</li>
+<li>3D-Vorschau des generierten Modells</li>
+<li>Export als STL und gegebenenfalls 3MF</li>
 </ul>
 Technologie
 
