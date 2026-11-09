@@ -13,6 +13,7 @@ import {
   ViewSettings,
   WheelParameters,
 } from './types/cad';
+import { AppSection } from './types/navigation';
 import { calculateTelemetryAndValidation } from './utils/geometryValidation';
 import { generateHopUpDialCADModel } from './utils/cadModelGenerator';
 import { exportGeometryToBinarySTL } from './utils/exportStl';
@@ -24,9 +25,17 @@ import { TechnicalDrawing2D } from './components/TechnicalDrawing2D';
 import { CrossSectionView } from './components/CrossSectionView';
 import { BottomActionBar } from './components/BottomActionBar';
 import { PresetModal } from './components/PresetModal';
+import { UsageSection } from './components/UsageSection';
+import { LicenseSection } from './components/LicenseSection';
+import { AboutSection } from './components/AboutSection';
+import { FeedbackSection } from './components/FeedbackSection';
+import { AdminSection } from './components/AdminSection';
 import { CheckCircle2, AlertCircle } from 'lucide-react';
 
 export default function App() {
+  // Navigation section state
+  const [currentSection, setCurrentSection] = useState<AppSection>('generator');
+
   // Initial parameters based on M4 Rotary Standard
   const initialPreset = DEFAULT_PRESETS[0];
 
@@ -133,8 +142,10 @@ export default function App() {
 
   return (
     <div className="flex flex-col w-screen h-screen bg-zinc-950 text-zinc-100 overflow-hidden font-sans">
-      {/* Top Header */}
+      {/* Top Header with 6-Section Navigation */}
       <HeaderBar
+        currentSection={currentSection}
+        onSelectSection={setCurrentSection}
         activeTab={viewSettings.activeTab}
         onSelectTab={(tab) => setViewSettings((prev) => ({ ...prev, activeTab: tab }))}
         telemetry={telemetry}
@@ -142,55 +153,77 @@ export default function App() {
         onApplyPreset={handleApplyPreset}
       />
 
-      {/* Main Workspace: Left Parameters (LINKS) & Right Viewer (RECHTS) */}
-      <div className="flex-1 flex overflow-hidden">
-        {/* Left Side: Parameters & Controls */}
-        <aside className="w-full md:w-[420px] lg:w-[460px] h-full shrink-0 flex flex-col z-20">
-          <ControlPanel
-            wheel={wheel}
-            spiral={spiral}
-            safety={safety}
-            telemetry={telemetry}
-            onUpdateWheel={(update) => setWheel((prev) => ({ ...prev, ...update }))}
-            onUpdateSpiral={(update) => setSpiral((prev) => ({ ...prev, ...update }))}
-            onUpdateSafety={(update) => setSafety((prev) => ({ ...prev, ...update }))}
-          />
-        </aside>
+      {/* Main Section Content Router */}
+      <div className="flex-1 flex overflow-hidden relative">
+        {/* Section 1: Generator */}
+        {currentSection === 'generator' && (
+          <div className="flex-1 flex overflow-hidden w-full h-full">
+            {/* Left Side: Parameters & Controls */}
+            <aside className="w-full md:w-[420px] lg:w-[460px] h-full shrink-0 flex flex-col z-20">
+              <ControlPanel
+                wheel={wheel}
+                spiral={spiral}
+                safety={safety}
+                telemetry={telemetry}
+                onUpdateWheel={(update) => setWheel((prev) => ({ ...prev, ...update }))}
+                onUpdateSpiral={(update) => setSpiral((prev) => ({ ...prev, ...update }))}
+                onUpdateSafety={(update) => setSafety((prev) => ({ ...prev, ...update }))}
+              />
+            </aside>
 
-        {/* Right Side: Large Viewer Switcher (3D / 2D / Querschnitt) */}
-        <main className="flex-1 h-full relative overflow-hidden bg-zinc-950">
-          {viewSettings.activeTab === '3d' && (
-            <ThreeViewport
-              wheel={wheel}
-              spiral={spiral}
-              viewSettings={viewSettings}
-              onUpdateViewSettings={(settings) =>
-                setViewSettings((prev) => ({ ...prev, ...settings }))
-              }
-              onExportSTL={handleExportSTL}
-            />
-          )}
+            {/* Right Side: Large Viewer Switcher (3D / 2D / Querschnitt) */}
+            <main className="flex-1 h-full relative overflow-hidden bg-zinc-950">
+              {viewSettings.activeTab === '3d' && (
+                <ThreeViewport
+                  wheel={wheel}
+                  spiral={spiral}
+                  viewSettings={viewSettings}
+                  onUpdateViewSettings={(settings) =>
+                    setViewSettings((prev) => ({ ...prev, ...settings }))
+                  }
+                  onExportSTL={handleExportSTL}
+                />
+              )}
 
-          {viewSettings.activeTab === '2d' && (
-            <TechnicalDrawing2D wheel={wheel} spiral={spiral} telemetry={telemetry} />
-          )}
+              {viewSettings.activeTab === '2d' && (
+                <TechnicalDrawing2D wheel={wheel} spiral={spiral} telemetry={telemetry} />
+              )}
 
-          {viewSettings.activeTab === 'crossSection' && (
-            <CrossSectionView wheel={wheel} spiral={spiral} telemetry={telemetry} />
-          )}
-        </main>
+              {viewSettings.activeTab === 'crossSection' && (
+                <CrossSectionView wheel={wheel} spiral={spiral} telemetry={telemetry} />
+              )}
+            </main>
+          </div>
+        )}
+
+        {/* Section 2: Usage / Anleitung */}
+        {currentSection === 'usage' && <UsageSection />}
+
+        {/* Section 3: License */}
+        {currentSection === 'license' && <LicenseSection />}
+
+        {/* Section 4: About */}
+        {currentSection === 'about' && <AboutSection />}
+
+        {/* Section 5: Feedback */}
+        {currentSection === 'feedback' && <FeedbackSection />}
+
+        {/* Section 6: Admin */}
+        {currentSection === 'admin' && <AdminSection />}
       </div>
 
-      {/* Dedicated Bottom Action Bar (UNTEN: STL exportieren, 3MF exportieren, Parameter zurücksetzen) */}
-      <BottomActionBar
-        wheel={wheel}
-        spiral={spiral}
-        telemetry={telemetry}
-        onExportSTL={handleExportSTL}
-        onExport3MF={handleExport3MF}
-        onReset={handleReset}
-        isExporting={isExporting}
-      />
+      {/* Dedicated Bottom Action Bar (Only visible in Generator view) */}
+      {currentSection === 'generator' && (
+        <BottomActionBar
+          wheel={wheel}
+          spiral={spiral}
+          telemetry={telemetry}
+          onExportSTL={handleExportSTL}
+          onExport3MF={handleExport3MF}
+          onReset={handleReset}
+          isExporting={isExporting}
+        />
+      )}
 
       {/* Preset Modal */}
       <PresetModal
