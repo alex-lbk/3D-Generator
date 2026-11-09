@@ -84,6 +84,6 @@ Die Versionsnummern und Änderungen werden im Laufe der Entwicklung ergänzt.
 
 Fehler, Probleme und Verbesserungsvorschläge können über das integrierte Feedbacksystem der Anwendung eingereicht werden.
 <hr>
-<b>Projekt:</b> M4 Hop-Up Generator
-<b>Status:</b> In Entwicklung
+<b>Projekt:</b> M4 Hop-Up Generator<br>
+<b>Status:</b> In Entwicklung<br>
 <b>Repository:</b> GitHub
