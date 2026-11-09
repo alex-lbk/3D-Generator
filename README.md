@@ -39,15 +39,17 @@ Das Projekt basiert auf folgenden Technologien:
   
 <h2>Bedienung</h2>
 <ol>
-<li>Generator öffnen.</li>
-Gewünschte Maße und Parameter einstellen.
-Das Modell in der 3D-Vorschau kontrollieren.
-Geometrie und Druckbarkeit überprüfen.
-Das fertige Modell exportieren.
-Die exportierte Datei in einem Slicer öffnen und für den 3D-Druck vorbereiten.
-Administration und Feedback
+  <li>Generator öffnen.</li>
+  <li>Gewünschte Maße und Parameter einstellen.</li>
+  <li>Das Modell in der 3D-Vorschau kontrollieren.</li>
+  <li>Geometrie und Druckbarkeit überprüfen.</li>
+  <li>Das fertige Modell exportieren.</li>
+  <li>Die exportierte Datei in einem Slicer öffnen und für den 3D-Druck vorbereiten.</li>
+</ol>
 
-Das Projekt beinhaltet einen integrierten Administrationsbereich.
+<h2>Administration und Feedback</h2>
+
+Das Projekt beinhaltet einen integrierten Administrationsbereich.<br>
 
 Geplant beziehungsweise vorgesehen sind:
 
