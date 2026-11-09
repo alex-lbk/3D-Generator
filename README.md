@@ -1,4 +1,4 @@
-M4 Hop-Up Generator
+<h1>M4 Hop-Up Generator</h1>
 
 Ein parametrischer 3D-Generator zur Erstellung individueller M4-Hop-Up-Einstellräder für den 3D-Druck.
 
