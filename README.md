@@ -10,7 +10,9 @@ Das Ziel des Projekts ist es, ein möglichst präzises, konfigurierbares und dru
 
 Der Generator ist auf die Erstellung des Einstellrades spezialisiert und stellt kein vollständiges Hop-Up-System dar.
 
-Funktionen
+<h2>Funktionen</h2>
+<ul>
+  <li>
 Parametrische Konstruktion des Einstellrades
 Individuell einstellbare Innen- und Außendurchmesser
 Einstellbare Gesamthöhe
@@ -22,6 +24,8 @@ Konische Außenkontur
 Individuell einstellbare geometrische Details
 3D-Vorschau des generierten Modells
 Export als STL und gegebenenfalls 3MF
+  </li>
+</ul>
 Technologie
 
 Das Projekt basiert auf folgenden Technologien:
