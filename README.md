@@ -64,7 +64,7 @@ Geplant beziehungsweise vorgesehen sind:<br>
 
 <h2>Lizenz und Nutzungsrechte</h2>
 
-Die Nutzungsrechte und Veröffentlichungsbedingungen werden über eine separate LICENSE-Datei geregelt.<br>
+<p>Die Nutzungsrechte und Veröffentlichungsbedingungen werden über eine separate <a href="https://github.com/alex-lbk/3D-Generator/main/LICENSE" target="_blank">LICENSE-Datei</a> geregelt.</p><br>
 
 Die Nutzung des Projekts ist an die dort festgelegten Bedingungen gebunden.
 
