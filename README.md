@@ -76,14 +76,14 @@ Bestehende Funktionen und insbesondere die geometrische Berechnung des Generator
 
 Neue Funktionen sollen möglichst modular integriert werden, ohne die bisherige Modellgenerierung negativ zu beeinflussen.
 
-Versionsverlauf
+<h2>Versionsverlauf</h2>
 
 Die Versionsnummern und Änderungen werden im Laufe der Entwicklung ergänzt.
 
-Feedback und Kontakt
+<h2>Feedback und Kontakt</h2>
 
 Fehler, Probleme und Verbesserungsvorschläge können über das integrierte Feedbacksystem der Anwendung eingereicht werden.
-
-Projekt: M4 Hop-Up Generator
-Status: In Entwicklung
-Repository: GitHub
+<hr>
+<b>Projekt:</b> M4 Hop-Up Generator
+<b>Status:</b> In Entwicklung
+<b>Repository:</b> GitHub
