@@ -38,8 +38,8 @@ Das Projekt basiert auf folgenden Technologien:
 </ul>
   
 <h2>Bedienung</h2>
-
-Generator öffnen.
+<ol>
+<li>Generator öffnen.</li>
 Gewünschte Maße und Parameter einstellen.
 Das Modell in der 3D-Vorschau kontrollieren.
 Geometrie und Druckbarkeit überprüfen.
