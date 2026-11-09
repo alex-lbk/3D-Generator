@@ -51,21 +51,24 @@ Das Projekt basiert auf folgenden Technologien:
 
 Das Projekt beinhaltet einen integrierten Administrationsbereich.<br>
 
-Geplant beziehungsweise vorgesehen sind:
+Geplant beziehungsweise vorgesehen sind:<br>
 
-Feedback von Benutzern
-Fehlerberichte
-Verbesserungsvorschläge
-Verwaltung eingereichter Rückmeldungen
-Statusverwaltung für Feedback
-Übersicht über offene und bearbeitete Meldungen
-Lizenz und Nutzungsrechte
+<ul>
+  <li>Feedback von Benutzern</li>
+  <li>Fehlerberichte</li>
+  <li>Verbesserungsvorschläge</li>
+  <li>Verwaltung eingereichter Rückmeldungen</li>
+  <li>Statusverwaltung für Feedback</li>
+  <li>Übersicht über offene und bearbeitete Meldungen</li>
+</ul>
 
-Die Nutzungsrechte und Veröffentlichungsbedingungen werden über eine separate LICENSE-Datei geregelt.
+<h2>Lizenz und Nutzungsrechte</h2>
+
+Die Nutzungsrechte und Veröffentlichungsbedingungen werden über eine separate LICENSE-Datei geregelt.<br>
 
 Die Nutzung des Projekts ist an die dort festgelegten Bedingungen gebunden.
 
-Entwicklung
+<h2>Entwicklung</h2>
 
 Das Projekt wird kontinuierlich weiterentwickelt.
 
