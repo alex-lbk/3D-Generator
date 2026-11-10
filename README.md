@@ -62,6 +62,7 @@ Geplant beziehungsweise vorgesehen sind:<br>
   <li>Übersicht über offene und bearbeitete Meldungen</li>
 </ul>
 
+
 <h2>Lizenz und Nutzungsrechte</h2>
 
 <p>Die Nutzungsrechte und Veröffentlichungsbedingungen werden über eine separate <a href="https://github.com/alex-lbk/3D-Generator/blob/main/LICENSE" target="_blank">LICENSE-Datei</a> geregelt.</p><br>
