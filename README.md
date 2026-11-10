@@ -1,7 +1,7 @@
 <h1>M4 Hop-Up Generator</h1>
 
-Ein parametrischer 3D-Generator zur Erstellung individueller M4-Hop-Up-Einstellräder für den 3D-Druck.
-
+Ein parametrischer 3D-Generator zur Erstellung individueller M4-Hop-Up-Einstellräder für den 3D-Druck.<br>
+<img src="https://postimg.cc/64sxPPLf" alt="Bild des Pogramms">
 <h2>Projektbeschreibung</h2>
 
 Der M4 Hop-Up Generator ermöglicht die individuelle Konstruktion eines parametrischen Einstellrades mit einer spiralförmigen Einstellnut.
