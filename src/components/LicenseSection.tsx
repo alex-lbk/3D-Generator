@@ -2,7 +2,7 @@ import React from 'react';
 import { Shield, Check, X, ExternalLink, FileText, Lock, UserCheck, AlertTriangle } from 'lucide-react';
 
 export const LicenseSection: React.FC = () => {
-  const githubLicenseUrl = 'https://github.com/alex-lbk/m4-hopup-generator/blob/main/LICENSE';
+  const githubLicenseUrl = 'https://github.com/alex-lbk/3D-Generator/blob/main/LICENSE';
 
   return (
     <div className="w-full h-full overflow-y-auto bg-zinc-950 text-zinc-100 p-6 md:p-10 select-none">
